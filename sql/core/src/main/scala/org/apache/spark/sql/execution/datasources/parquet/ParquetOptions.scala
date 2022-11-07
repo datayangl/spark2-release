@@ -81,7 +81,9 @@ object ParquetOptions {
     "uncompressed" -> CompressionCodecName.UNCOMPRESSED,
     "snappy" -> CompressionCodecName.SNAPPY,
     "gzip" -> CompressionCodecName.GZIP,
-    "lzo" -> CompressionCodecName.LZO)
+    "lzo" -> CompressionCodecName.LZO,
+    "zstd" -> CompressionCodecName.ZSTD
+  )
 
   def getParquetCompressionCodecName(name: String): String = {
     shortParquetCompressionCodecNames(name).name()
